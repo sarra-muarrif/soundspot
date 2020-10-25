@@ -1,0 +1,221 @@
+body {
+  background: #190d40;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.is-hidden {
+  display: none;
+}
+svg {
+  fill: currentColor;
+}
+button {
+  cursor: pointer;
+}
+input,
+button {
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  outline: none;
+  background: none;
+}
+button img {
+  display: inline-block;
+  vertical-align: middle;
+}
+#wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+#content {
+  flex: 1 0 50%;
+  max-width: 780px;
+}
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.flexRow {
+  display: flex;
+}
+.flexRow.is-submit {
+  margin-top: 1.5rem;
+}
+.flexRow.is-centered {
+  justify-content: center;
+}
+.search input,
+.search button {
+  line-height: 3.3;
+  padding: 0 2%;
+}
+#searchQuery {
+  background: #361c8a;
+  box-shadow: 0 0 1px 0 transparent;
+  transition: box-shadow 0.3s ease-in;
+  flex-grow: 1;
+}
+#searchQuery:focus {
+  box-shadow: 0 0 8px 0 #361c8a;
+}
+#searchType {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #5029cc no-repeat url(../images/arrow_bottom.svg) 90% 50%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  padding-left: 1rem;
+  width: 15%;
+  min-width: 75px;
+  margin-left: -0.5rem;
+  font-weight: bold;
+}
+#searchType::-ms-expand {
+  display: none;
+}
+::placeholder {
+  color: white;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.submitSearch {
+  background: #5d38f4;
+  width: 30%;
+  min-width: 220px;
+  transition: background 0.25s ease-in;
+  font-weight: bold;
+}
+.submitSearch img {
+  margin-left: 5px;
+}
+.submitSearch:hover {
+  background: #361c8a;
+}
+.submitSearch:focus {
+  background: #5d38f447;
+}
+button.switch {
+  color: #5029cc;
+  padding: 4px 8px;
+}
+button.switch.is-active,
+button.switch:hover {
+  color: white;
+  background: #5029cc;
+}
+
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #361c8a;
+  padding-bottom: 10px;
+}
+.sectionHead h3 {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.musicList li {
+  border-radius: 8px;
+  padding: 24px;
+  background: #281366;
+}
+.trackPoster {
+  display: inline-block;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.musicList .trackDetails {
+  text-transform: capitalize;
+}
+.musicList .trackTitle {
+  color: white;
+  line-height: 2;
+}
+.musicList .trackArtist {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.7rem;
+}
+.trackActions .play {
+  background: #5029cc url("../images/play.svg") no-repeat center center;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.trackActions .like {
+  color: #5029cc;
+}
+.musicList li:hover,
+.musicList li.is-active {
+  background-color: #5029cc;
+}
+.musicList li:hover .play,
+.musicList li.is-active .play {
+  background-color: #281366;
+}
+.musicList li:hover .like,
+.musicList li.is-active .like {
+  color: #281366;
+}
+.musicList.is-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.musicList.is-grid li {
+  position: relative;
+  flex: 0 1 30%;
+  text-align: center;
+  margin-top: 4.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.musicList.is-grid li .trackDetails {
+  flex-grow: 1;
+}
+.musicList.is-grid li .trackTitle {
+  line-height: 1.5;
+  margin: 0.75rem 0;
+}
+.musicList.is-grid li .trackArtist {
+  margin-bottom: 1rem;
+}
+.musicList.is-grid .like {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.musicList.is-list {
+  margin-top: 2.5rem;
+}
+.musicList.is-list li {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.musicList.is-list span.trackDetails {
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+.musicList.is-list button.like {
+  margin: 0 0.5rem;
+}
+.musicList.is-list .trackActions {
+  display: flex;
+  align-items: center;
+}
