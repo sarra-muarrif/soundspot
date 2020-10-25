@@ -14,7 +14,7 @@
 
 ## ScreenShot
 
-![soundspot]((../Fullsatck-soundspotProject/screenshot.png))
+![soundspot](../Fullsatck-soundspotProject/screenshot.png)
 
 ## Tech Stack
 
