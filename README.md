@@ -13,7 +13,7 @@
 1. run the Back-End,inside the directory _auth-server_,in the terminal enter **node app**.
 
 ## ScreenShot
-![soundspot](../screenshot.png)
+![soundspot](/screenshot.png)
 
 
 ## Tech Stack
