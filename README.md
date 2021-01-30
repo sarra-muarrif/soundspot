@@ -2,22 +2,21 @@
 
 ### this repository contains simple input sreach by useing spotify API.
 
-## Installation
+## Setup
 
-1. fork and clone the repository.
-2. install yarn or npm 
+Clone this repo to your desktop and run npm install to install all the dependencies.
 
-## Getting the project to work
+## Usage
 
-1. first run this project by open index.html in browser, will open on http://localhost:5500/ .
-1. run the Back-End,inside the directory _auth-server_,in the terminal enter **node app**.
+1.  run the Back-End,,in the terminal inside the directory _auth-server_ enter **npm start**.
+1.  run this project by open index.html in browser, will open on http://localhost:5500/ .
 
 ## ScreenShot
-![soundspot](/screenshot.png)
 
+![soundspot](/screenshot.png)
 
 ## Tech Stack
 
-##### HTML , CSS , JS , express
+##### HTML , CSS , JS , express , cors
 
 > ##### :red_circle: This Project Is Part Of FullStack Barmej BootCamp Education
